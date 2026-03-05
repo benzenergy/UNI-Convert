@@ -2,7 +2,7 @@
 <br>
 ##
 
-![ground](github/ground.png)
+![ground](github/ground-uni.png)
 
 ##
 <br>
