@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<SelfContained>false</SelfContained>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+
+		<ApplicationIcon>Resource/app.ico</ApplicationIcon>
+		<InvariantGlobalization>false</InvariantGlobalization>
+		<Nullable>enable</Nullable>
+		<PublishSingleFile>true</PublishSingleFile>
+
+		<AssemblyTitle>UNI Convert</AssemblyTitle>
+		<AssemblyCompany>benzenergy</AssemblyCompany>
+		<AssemblyProduct>UNI Convert</AssemblyProduct>
+		<Copyright>© 2026 benzenergy</Copyright>
+		<Version>1.0.0</Version>
+		<FileVersion>1.0.0.0</FileVersion>
+		<PublishTrimmed>false</PublishTrimmed>
+		<TrimMode>none</TrimMode>
+		<ReadyToRun>false</ReadyToRun>
+		<SatelliteResourceLanguages>ru;en</SatelliteResourceLanguages>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<SignAssembly>False</SignAssembly>
+		<GenerateDocumentationFile>False</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Company>$(Authors)</Company>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Встроенные шрифты -->
+		<Resource Include="Assets/Fonts/Baijamjuree/*.ttf" />
+		<Resource Include="Assets/Fonts/Inter/*.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Встроенные иконки и изображения -->
+		<Resource Include="Assets/Icons/*.png" />
+		<Resource Include="Resource/*.png" />
+		<Resource Include="Resource/app.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- NuGet пакеты -->
+		<PackageReference Include="ClosedXML" Version="0.105.0" />
+		<PackageReference Include="itext7" Version="9.5.0" />
+		<PackageReference Include="itext7.bouncy-castle-adapter" Version="9.5.0" />
+	</ItemGroup>
+
+</Project>
